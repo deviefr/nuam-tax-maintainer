@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row justify-content-center align-items-center" style="min-height: 60vh;">
+    <div class="col-md-5 col-lg-4">
+        <div class="card shadow-lg">
+            <div class="card-header-nuam text-center">
+                <h5 class="mb-0">Acceso Seguro</h5>
+            </div>
+            
+            <div class="card-body p-4">
+                <div class="text-center mb-4">
+                    <img src="{% static 'img/nuam_HD.png' %}" alt="NUAM" style="height: 30px; opacity: 0.8;">
+                </div>
+
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    {% if form.errors %}
+                        <div class="alert alert-danger py-2 small text-center rounded-0">
+                            Credenciales incorrectas
+                        </div>
+                    {% endif %}
+
+                    <div class="mb-3">
+                        <label class="form-label text-muted small fw-bold">USUARIO</label>
+                        <input type="text" name="username" class="form-control" placeholder="Ej: analista.nuam" required autofocus>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label text-muted small fw-bold">CONTRASEÑA</label>
+                        <input type="password" name="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-nuam w-100 py-2">Ingresar al Sistema</button>
+                    <input type="hidden" name="next" value="{{ next }}">
+                </form>
+            </div>
+            <div class="card-footer text-center bg-light py-3">
+                <small class="text-muted">Acceso restringido a personal de Operaciones</small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

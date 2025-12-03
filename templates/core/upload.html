@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        
+        <div class="d-flex align-items-center mb-4">
+            <a href="{% url 'home' %}" class="text-decoration-none text-muted me-3">
+                <i class="bi bi-arrow-left"></i> Volver
+            </a>
+            <h3 class="mb-0">Procesamiento DJ1948</h3>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-header-nuam">
+                <i class="bi bi-file-earmark-spreadsheet me-2"></i> Carga Masiva de Datos
+            </div>
+            
+            <div class="card-body p-4">
+                <p class="text-muted small mb-4">
+                    Suba el archivo Excel (.xlsx) o CSV conteniendo las columnas: 
+                    <code>RUT</code>, <code>RazonSocial</code>, <code>Monto</code>, <code>Fecha</code>.
+                    El sistema calculará los factores automáticamente.
+                </p>
+
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    
+                    <div class="mb-4 p-5 text-center border rounded bg-light" style="border: 2px dashed #ddd !important;">
+                        <i class="bi bi-cloud-arrow-up fs-1 text-muted mb-3"></i>
+                        <div class="mb-3">
+                            {{ form.file }}
+                        </div>
+                        <small class="text-muted">Arrastre su archivo aquí o haga clic para seleccionar</small>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-nuam py-2">
+                            <i class="bi bi-gear-wide-connected me-2"></i> Procesar y Calcular Factores
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-4 d-flex align-items-center" role="alert">
+            <i class="bi bi-info-circle-fill me-2 fs-4"></i>
+            <div>
+                La conversión se realizará usando la fórmula tributaria vigente. 
+                Cada registro quedará auditado en el sistema.
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

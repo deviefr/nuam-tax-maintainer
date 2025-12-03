@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5">
+        <div class="card border-danger shadow">
+            <div class="card-header bg-danger text-white">
+                ⚠️ Confirmación de Seguridad
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger mb-3">¿Eliminar registro tributario?</h5>
+                <p>Estás a punto de eliminar la calificación de: <br><strong>{{ object.razon_social }} ({{ object.rut_emisor }})</strong></p>
+                <p class="small text-muted">Esta acción quedará registrada en el Log de Auditoría (HU-05) y no se puede deshacer.</p>
+                
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mt-4">
+                        <a href="{% url 'home' %}" class="btn btn-secondary me-2">Cancelar</a>
+                        <button type="submit" class="btn btn-danger">Confirmar Eliminación</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
