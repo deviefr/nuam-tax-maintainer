@@ -25,7 +25,7 @@ Sistema de Gestión de Calificaciones Tributarias desarrollado para el Holding N
    cd nuam-tax-maintainer
 
 2. **Crear entorno virtual e instalar dependencias**
-    ``bash
+    ```bash
     python -m venv venv
     venv\Scripts\activate
 
@@ -33,16 +33,16 @@ Sistema de Gestión de Calificaciones Tributarias desarrollado para el Holding N
     (pandas, openpyxl, django)
 
 3. **Migrar la base de datos**
-    ``bash
+    ```bash
     python manage.py makemigrations
     python manage.py migrate
 
 4. **Crear Superusuario (Admin)**
-    ``bash
+    ```bash
     python manage.py createsuperuser
 
 5. **Iniciar el servidor**
-    ``bash
+    ```bash
     python manage.py runserver
 
 ## Usuarios RBAC
