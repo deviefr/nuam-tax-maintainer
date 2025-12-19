@@ -26,21 +26,42 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                     {% if user.is_authenticated %}
                         <li class="nav-item me-3">
-                            <span class="text-muted small">Bienvenido, <strong>{{ user.username|title }}</strong></span>
+                            <span class="text-muted small">
+                                Hola, <strong>{{ user.username|title }}</strong>
+                                
+                                {% if user.is_superuser %}
+                                    <span class="badge bg-danger ms-1">Administrador</span>
+                                {% elif user.is_staff %}
+                                    <span class="badge bg-warning text-dark ms-1">Analista</span>
+                                {% else %}
+                                    <span class="badge bg-secondary ms-1">Corredor</span>
+                                {% endif %}
+                            </span>
                         </li>
                         
                         {% if user.is_staff %}
-                        <li class="nav-item">
-                            <a href="{% url 'upload' %}" class="btn btn-outline-nuam btn-sm me-2">
-                                <i class="bi bi-cloud-upload"></i> Carga Masiva
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-nuam btn-sm me-2" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-gear-fill"></i> Gestión
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'upload' %}"><i class="bi bi-cloud-upload"></i> Carga Masiva</a></li>
+                                
+                                {% if user.is_superuser %}
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="{% url 'audit_view' %}"><i class="bi bi-shield-check"></i> Auditoría</a></li>
+                                    <li><a class="dropdown-item" href="/admin" target="_blank"><i class="bi bi-person-badge"></i> Panel Admin</a></li>
+                                {% endif %}
+                            </ul>
                         </li>
                         {% endif %}
 
                         <li class="nav-item">
                             <form action="{% url 'logout' %}" method="post" class="d-inline">
                                 {% csrf_token %}
-                                <button type="submit" class="btn btn-link nav-link" style="text-decoration: none;">Salir</button>
+                                <button type="submit" class="btn btn-link nav-link text-danger" style="text-decoration: none;">
+                                    <i class="bi bi-box-arrow-right"></i> Salir
+                                </button>
                             </form>
                         </li>
                     {% else %}
