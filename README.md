@@ -1,4 +1,4 @@
-# nuam-tax-maintainer# NUAM Tax Maintainer 🚀
+# nuam-tax-maintainer
 
 Sistema de Gestión de Calificaciones Tributarias desarrollado para el Holding NUAM (Bolsas de Santiago, Lima y Colombia). Este sistema centraliza, automatiza y audita la carga de factores tributarios.
 
@@ -21,7 +21,7 @@ Sistema de Gestión de Calificaciones Tributarias desarrollado para el Holding N
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tucuentagithub/nuam-tax-maintainer.git](https://github.com/tucuentagithub/nuam-tax-maintainer.git)
+   git clone https://github.com/deviefr/nuam-tax-maintainer.git
    cd nuam-tax-maintainer
 
 2. **Crear entorno virtual e instalar dependencias**
