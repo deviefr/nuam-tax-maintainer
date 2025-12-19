@@ -53,3 +53,7 @@ Sistema de Gestión de Calificaciones Tributarias desarrollado para el Holding N
 | Analista | `analista`| *(clave)* | Carga, Edición y Borrado *(Staff: Sí)* |
 | Corredor | `corredor`| *(clave)* | Solo lectura y exportar *(Staff: No)* |
 
+
+## Página web funcional
+ ```bash
+https://devalium.pythonanywhere.com
