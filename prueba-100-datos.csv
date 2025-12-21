@@ -1,0 +1,91 @@
+RUT;RazonSocial;Monto;Factor;Fecha
+76.123.123-2;Inversiones Alpha SpA;1500000;;2025-01-01
+12.345.678-5;Comercial Beta Ltda;500.000;;2025-01-02
+9.111.222-8;Agricola del Sur;1200000;;2025-01-03
+16.555.444-3;Transportes Rapidos;800000;;2025-01-04
+20.545.375-K;Javiera Sepúlveda;100000;;2025-01-05
+   76111222-K   ;Espacios en RUT SpA;2.500.000;;2025-01-06
+15.222.333-4;Constructora Solida;MontoTexto;;2025-01-07
+18.999.000-K;Tecnologia Global;-50000;;2025-01-08
+22.333.444-5;Retail Chile SA;1000000;;
+;EMPRESA SIN RUT;450000;;2025-01-10
+88.777.666-3;Panaderia La Espiga;150000;;2025-01-11
+12.888.777-3;Consultora Vial;9999999;;2025-01-12
+1-1;Error Digito Verificador;300000;;2025-01-13
+77.888.999-K;Mineria y Procesos;5500000;;2025-01-14
+99.888.777-6;Logistica Integral;600000;;2025-01-15
+55.444.333-2;Importadora Asia;750000;;2025-01-16
+11.222.333-K;RUT Valido Con Puntos;850.000;;2025-01-17
+10.222.333-9;Servicios NUAM;1200000;;2025-01-18
+98.765.432-1;RUT Falso Detectado;100000;;2025-01-19
+12345678-K;RUT Sin Puntos Valido;200000;;2025-01-20
+6.111.222-3;Ganadera del Norte;400000;;2025-01-21
+15666777-2;Inmobiliaria Torre;1800000;;2025-01-22
+88.111.222-3;Pesquera Mar Azul;900000;;2025-01-23
+;RUT Vacio Otra Vez;50000;;2025-01-24
+76.555.444-3;Clinica Salud Total;3500000;;2025-01-25
+22.111.000-K;Automotriz Central;5.000.000;;2025-01-26
+1-8;RUT Invalido Corto;15000;;2025-01-27
+13.444.555-6;Farmacias Unidas;850000;;2025-01-28
+9.555.666-7;Libreria Nacional;120000;;2025-01-29
+8.444.333-2;Supermercados Real;450000;;2025-01-30
+12.000.111-K;Zapateria El Paso;80000;;2025-02-01
+76.999.888-7;Colegio San Pedro;1100000;;2025-02-02
+14.222.555-8;Universidad Central;6000000;;2025-02-03
+11111111-1;Desconocido owo;100;;2025-02-04
+17.888.999-0;Seguros La Previsora;2500000;;2025-02-05
+19.111.222-3;Banco Solidario;9000000;;2025-02-06
+24.555.666-7;AF P Futuro;300000;;2025-02-07
+1-K;RUT Muy Corto Malo;50000;;2025-02-08
+12.333.444-5;Turismo Aventura;150.000;;2025-02-09
+6.777.888-9;Hotel Plaza;850.500;;2025-02-10
+10.555.444-3;Restaurante El Chef;1200000;;2025-02-11
+15.999.888-7;Cines Star;700000;;2025-02-12
+8.888.111-2;Gimnasio Power;350000;;2025-02-13
+13.222.111-K;Spa Relajo;450000;;2025-02-14
+77.666.555-4;Club de Golf;2500000;;2025-02-15
+9.999.000-1;Condominio Los Lagos;180000;;2025-02-16
+13.013.462-9;Persona Random;100000;;2025-02-17
+12.123.123-1;Transporte Escolar;90000;;2025-02-18
+15.000.111-2;Jardineria Verde;60000;;2025-02-19
+16.888.777-K;Limpieza Industrial;1500000;;2025-02-20
+18.555.222-3;Seguridad Maxima;800000;;2025-02-21
+19.444.333-2;Correos Express;450000;;2025-02-22
+22.000.111-K;Internet Veloz;600000;;2025-02-23
+24.111.222-3;Agua Purificada;200000;;2025-02-24
+76.000.111-2;Gasolinera Ruta 5;5000000;;2025-02-25
+88.222.333-4;Energetica Solar;8000000;;2025-02-26
+9.222.333-4;Reciclaje Eco;150000;;2025-02-27
+10.111.000-K;Consultora Legal;1200000;;2025-02-28
+12.555.666-7;Notaria Publica;350000;;2025-03-01
+14.888.999-0;Imprenta Color;250000;;2025-03-02
+1-1;Otro RUT Malo;10000;;2025-03-03
+17.555.444-3;Fabrica de Muebles;1800000;;2025-03-04
+19.222.111-K;Textil Moderna;950000;;2025-03-05
+22.888.777-6;Calzados del Sur;400000;;2025-03-06
+24.999.000-1;Boutique Elegance;600000;;2025-03-07
+76.333.222-1;Joyeria Gold;1500000;;2025-03-08
+88.555.444-3;Relojeria Time;300000;;2025-03-09
+9.000.111-2;Optica Vision;800000;;2025-03-10
+10.888.777-6;Farmacia Salud;1200000;;2025-03-11
+12.000.222-3;Perfumeria Aroma;500000;;2025-03-12
+14.555.111-K;Jugueteria Kids;450000;;2025-03-13
+16.222.333-4;Bazar Oportunidades;150000;;2025-03-14
+18.999.111-2;Libreria El Lector;200000;;2025-03-15
+19.000.222-3;Musica y Sonido;350000;;2025-03-16
+22.555.888-7;Computacion Byte;1500000;;2025-03-17
+24.222.111-0;Celulares Smart;800000;;2025-03-18
+76.888.000-K;Electrodomesticos;2000000;;2025-03-19
+88.999.111-2;Muebleria Rustica;1200000;;2025-03-20
+9.555.111-K;Decoracion Hogar;600000;;2025-03-21
+10.222.000-1;Iluminacion Led;400000;;2025-03-22
+12.888.222-3;Pinturas Color;300000;;2025-03-23
+14.111.555-4;Ferreteria El Martillo;850000;;2025-03-24
+16.000.999-8;Materiales de Construccion;5000000;;2025-03-25
+18.222.555-K;Ceramicas Piso;1500000;;2025-03-26
+19.888.000-1;Vidrieria Cristal;450000;;2025-03-27
+22.999.222-3;Cortinas y Persianas;600000;;2025-03-28
+24.555.111-2;Alfombras Suaves;350000;;2025-03-29
+76.222.333-4;Menaje de Cocina;200000;;2025-03-30
+88.000.555-K;Ropa de Cama;150000;;2025-04-01
+9.111.000-1;Articulos de Baño;100000;;2025-04-02
